@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        ol{
+            margin-left: 50px;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" id="navbar">
+        <ul class="nav-list">
+          <li>
+            <a href="#" class="nav-brand"
+              ><img src="./assets/Logo.png" alt=""
+            /></a>
+          </li>
+
+          <li><a href="index.html" class="blog-btn active">Go Back</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="blog">
+        <details>
+          <summary>Discuss the scope of var, let, and const</summary>
+          <p></p>
+
+          <h1>var</h1>
+          <ol>
+            <li>- Function-scoped.</li>
+            <li>
+              - Hoisted to the top of their containing function or script.
+            </li>
+            <li>- Can be redeclared within the same scope.</li>
+          </ol>
+          <h1>let</h1>
+          <ol>
+            <li>- Block-scoped (limited to the nearest enclosing block).</li>
+            <li>- Not hoisted to the top of their block.</li>
+            <li>- Cannot be redeclared within the same scope.</li>
+          </ol>
+          <h1>const</h1>
+          <ol>
+            <li>- Block-scoped (same as `let`).</li>
+            <li>
+              - Must be assigned a value at declaration and cannot be
+              reassigned.
+            </li>
+            <li>
+              - Objects and arrays declared with `const` are not immutable;
+              their properties or elements can be modified, but they cannot be
+              reassigned to a new object or array.
+            </li>
+          </ol>
+        </details>
+
+        <details>
+          <summary>Tell us the use cases of null and undefined</summary>
+          
+
+          <ol>
+            <li>undefined typically represents the absence of a value or the uninitialized state of a variable. It often occurs as the default value for function parameters or uninitialized variables.</li>
+            <li>
+              null is explicitly assigned to indicate that a variable or object property intentionally has no value or represents the absence of an object.
+            </li>
+            
+          </ol>
+          
+        </details>
+        <details>
+          <summary>What do you mean by REST API?</summary>
+         
+
+          <p style="margin-left: 30px;">
+            <strong>REST API</strong> (Representational State Transfer Application Programming Interface) is a set of rules and conventions for building and interacting with web services. It uses standard HTTP methods (GET, POST, PUT, DELETE) and follows the principles of statelessness and resource-based architecture to allow clients to request and manipulate data resources on a server over the internet. REST APIs are widely used for web applications to enable communication between different software systems or services.
+          </p>
+        </details>
+      </section>
+    </main>
+  </body>
+</html>

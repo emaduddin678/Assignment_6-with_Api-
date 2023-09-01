@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:500,700,800,900|Poppins:400,500,600,700,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a:hover {
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  text-decoration: none;
+}
+
+a,
+button:focus {
+  outline: 0;
+}
+
+a {
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* nav style start  */
+header {
+  padding: 0 50px;
+  margin: 30px 0;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  width: 150px;
+}
+
+.sort-btn {
+  border-radius: 4px;
+  background: rgba(37, 37, 37, 0.2);
+  padding: 10px 20px;
+  color: #252525;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.blog-btn {
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: white;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* nav style ends  */
+
+/* main body start  */
+main {
+  padding: 0 50px;
+}
+
+.category {
+  margin: 0 auto;
+}
+
+.all-btn {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.all-btn > button {
+  padding: 8px 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: rgba(37, 37, 37, 0.15);
+  border: none;
+}
+
+.all-btn > button > a {
+  color: rgba(37, 37, 37, 0.7);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.active {
+  background: #ff1f3d !important;
+}
+.active > a {
+  color: white !important;
+}
+
+/* category-video start here  */
+
+.category-video {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
+  gap: 20px;
+  padding: 20px;
+}
+.category-video > .video > img {
+  border-radius: 8px;
+}
+
+.category-video.error {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Styles for video items (modify as needed) */
+.video {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.time {
+  border-radius: 4px;
+  background: #171717;
+  color: white;
+  width: fit-content;
+  padding: 4px 5px;
+  position: absolute;
+  top: 155px;
+  right: 20px;
+}
+.video-description {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.video-heading {
+  color: #171717;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
+}
+.bannerImg {
+  width: 312px;
+  height: 200px;
+}
+.authorsImg {
+  width: 40px;
+  border-radius: 40px;
+}
+
+.user-name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Add more styles as needed */
+
+@media screen and (max-width: 992px) {
+  .category-video {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .category-video {
+    grid-template-columns: repeat(2, 1fr); /* 1 column for small screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .category-video {
+    grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+  }
+}
